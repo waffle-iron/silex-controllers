@@ -1,0 +1,32 @@
+language: php
+
+sudo: false
+
+php:
+  - 5.6
+  - 7.0
+  - hhvm
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+env:
+  global:
+    secure: $CODE_CLIMATE
+
+before_install:
+  - composer self-update
+
+install:
+  - composer install --prefer-dist
+
+before_script:
+  - git config --global user.email "travis-ci@codeclimate.com"
+  - git config --global user.name "Travis CI"
+
+script:
+  - vendor/bin/phpunit
+
+after_script:
+  - php composer/bin/test-reporter

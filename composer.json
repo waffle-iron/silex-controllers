@@ -1,0 +1,27 @@
+{
+    "name": "rogerioadris/silex-controllers",
+    "description": "Service provider for controllers",
+    "license": "MIT",
+    "authors": [{
+        "name": "Rogério Adriano",
+        "email": "rogerioadris@gmail.com"
+    }],
+    "require": {
+        "pimple/pimple": "~3.0"
+    },
+    "require-dev": {
+        "silex/silex": "~2.0",
+        "phpunit/phpunit": "^5.4",
+        "symfony/browser-kit": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Adris\\Silex\\Controllers\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Adris\\Silex\\Controllers\\Test\\": "tests/"
+        }
+    }
+}
