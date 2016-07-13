@@ -8,8 +8,8 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application();
 
-$app->register(new Adris\Silex\Controllers\Provider\ControllerServiceProvider(), array(
-    'adris.controllers.namespace' => 'Adris\Silex\Controllers\Test\Controller',
+$app->register(new Adris\Silex\Provider\ControllerServiceProvider(), array(
+    'adris.controllers.namespace' => 'Adris\Silex\Test\Controller',
     'adris.controllers.class.prefix' => '',
     'adris.controllers.class.suffix' => '',
     'adris.controllers.method.prefix' => '',

@@ -4,12 +4,12 @@
  *  (c) Rogério Adriano da Silva <rogerioadris.silva@gmail.com>
  */
 
-namespace Adris\Silex\Controllers\Provider;
+namespace Adris\Silex\Provider;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use Silex\ServiceControllerResolver;
-use Adris\Silex\Controllers\Service\ControllerResolver;
+use Adris\Silex\Service\ControllerResolver;
 
 /**
  * Class ControllerServiceProvider.

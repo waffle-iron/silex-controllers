@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Adris\\Silex\\Controllers\\": "src/"
+            "Adris\\Silex\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Adris\\Silex\\Controllers\\Test\\": "tests/"
+            "Adris\\Silex\\Test\\": "tests/"
         }
     }
 }

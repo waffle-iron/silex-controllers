@@ -4,7 +4,7 @@
  *  (c) Rogério Adriano da Silva <rogerioadris.silva@gmail.com>
  */
 
-namespace Adris\Silex\Controllers;
+namespace Adris\Silex\Controller;
 
 use Silex\Application;
 

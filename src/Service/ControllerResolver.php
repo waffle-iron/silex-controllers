@@ -4,10 +4,10 @@
  *  (c) Rogério Adriano da Silva <rogerioadris.silva@gmail.com>
  */
 
-namespace Adris\Silex\Controllers\Service;
+namespace Adris\Silex\Service;
 
 use Silex\ControllerResolver as BaseControllerResolver;
-use Adris\Silex\Controllers\ContainerAware;
+use Adris\Silex\Controller\ContainerAware;
 use InvalidArgumentException;
 
 /**

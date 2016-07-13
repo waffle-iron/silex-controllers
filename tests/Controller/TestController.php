@@ -4,9 +4,9 @@
  *  (c) Rogério Adriano da Silva <rogerioadris.silva@gmail.com>
  */
 
-namespace Adris\Silex\Controllers\Test\Controller;
+namespace Adris\Silex\Test\Controller;
 
-use Adris\Silex\Controllers\ContainerAware;
+use Adris\Silex\Controller\ContainerAware;
 
 class TestController extends ContainerAware
 {

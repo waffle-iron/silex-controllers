@@ -4,11 +4,11 @@
  *  (c) Rogério Adriano da Silva <rogerioadris.silva@gmail.com>
  */
 
-namespace Adris\Silex\Controllers\Test;
+namespace Adris\Silex\Test;
 
 use ReflectionClass;
 use Silex\WebTestCase;
-use Adris\Silex\Controllers\Service\ControllerResolver;
+use Adris\Silex\Service\ControllerResolver;
 
 class ControllersTest extends WebTestCase
 {
@@ -40,7 +40,7 @@ class ControllersTest extends WebTestCase
 
     /**
      * @expectedException        InvalidArgumentException
-     * @expectedExceptionMessage Class "\Adris\Silex\Controllers\Test\Controller\NotFound" does not exist.
+     * @expectedExceptionMessage Class "\Adris\Silex\Test\Controller\NotFound" does not exist.
      */
     public function testClassNotFound()
     {
@@ -64,7 +64,7 @@ class ControllersTest extends WebTestCase
 
     /**
      * @expectedException        InvalidArgumentException
-     * @expectedExceptionMessage Class "\Adris\Silex\Controllers\Test\Controller\NotFoundController" does not exist.
+     * @expectedExceptionMessage Class "\Adris\Silex\Test\Controller\NotFoundController" does not exist.
      */
     public function testClassNotFoundWithSufix()
     {
@@ -77,7 +77,7 @@ class ControllersTest extends WebTestCase
 
     /**
      * @expectedException        InvalidArgumentException
-     * @expectedExceptionMessage Class "\Adris\Silex\Controllers\Test\Controller\IsNotFound" does not exist.
+     * @expectedExceptionMessage Class "\Adris\Silex\Test\Controller\IsNotFound" does not exist.
      */
     public function testClassNotFoundWithPrefix()
     {
@@ -90,7 +90,7 @@ class ControllersTest extends WebTestCase
 
     /**
      * @expectedException        InvalidArgumentException
-     * @expectedExceptionMessage Class "\Adris\Silex\Controllers\Test\Controller\IsNotFoundController" does not exist.
+     * @expectedExceptionMessage Class "\Adris\Silex\Test\Controller\IsNotFoundController" does not exist.
      */
     public function testClassNotFoundWithSufixAndPrefix()
     {
